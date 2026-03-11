@@ -33,4 +33,8 @@
 <img width="831" height="655" alt="image" src="https://github.com/user-attachments/assets/7177792e-c6ef-4f42-be14-1727493722bf" />
 <img width="831" height="725" alt="image" src="https://github.com/user-attachments/assets/5de783d7-d508-4216-b501-941e4bf3f5ab" />
 
+**Математическая функция ThirdPage**
+---
+<img width="726" height="865" alt="image" src="https://github.com/user-attachments/assets/63085237-02d7-42dd-b94d-798bddd1f6a7" />
+<img width="726" height="355" alt="image" src="https://github.com/user-attachments/assets/42811052-e858-46df-870d-2f9bb63519c1" />
 
