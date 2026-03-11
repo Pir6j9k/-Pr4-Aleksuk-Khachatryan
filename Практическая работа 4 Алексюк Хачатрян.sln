@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическая работа 4 Алексюк Хачатрян", "Практическая работа 4 Алексюк Хачатрян.csproj", "{FD7A8245-BD31-4558-8508-63F712E0422F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFun", "..\MathFun\MathFun.csproj", "{39577BAA-B93E-4376-B296-0DC683FE702C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FD7A8245-BD31-4558-8508-63F712E0422F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD7A8245-BD31-4558-8508-63F712E0422F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD7A8245-BD31-4558-8508-63F712E0422F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39577BAA-B93E-4376-B296-0DC683FE702C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39577BAA-B93E-4376-B296-0DC683FE702C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39577BAA-B93E-4376-B296-0DC683FE702C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39577BAA-B93E-4376-B296-0DC683FE702C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
