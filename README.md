@@ -38,3 +38,5 @@
 <img width="726" height="865" alt="image" src="https://github.com/user-attachments/assets/63085237-02d7-42dd-b94d-798bddd1f6a7" />
 <img width="726" height="355" alt="image" src="https://github.com/user-attachments/assets/42811052-e858-46df-870d-2f9bb63519c1" />
 
+## Окно «Обозреватель тестов»
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf39d1ba-2869-46e9-9e9d-1dd69e3aeeae" />
