@@ -22,10 +22,10 @@
 ### Практическая работа №6 Создание автоматических  Unit-тестов Часть 2
 #### Результат работы приложения
 
-Математическая функция 1
+Математическая функция FirstPage
 ---
- <img width="944" height="661" alt="image" src="https://github.com/user-attachments/assets/cdea6c0c-64de-4793-b297-03f1f474213e" />
+ <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/cdea6c0c-64de-4793-b297-03f1f474213e" />
  <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/3c3079ed-d59d-47f5-8f66-70e6e21b53ab" />
-
+---
  
 
