@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Практическая_работа_4_Алексюк_Хачатрян.Logic;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Практическая_работа_4_Алексюк_Хачатрян.Pages
@@ -72,91 +73,50 @@ namespace Практическая_работа_4_Алексюк_Хачатря�
 
         private void CountBtn_Click(object sender, RoutedEventArgs e)
         {
+            Count(XTextBox.Text, BTextBox.Text);
+        }
+
+        public bool Count(string X, string M)
+        {
             try
             {
-                if (string.IsNullOrWhiteSpace(XTextBox.Text) ||
-                    string.IsNullOrWhiteSpace(MTextBox.Text))
+                if(!SecondPageCalculator.TryParseValues(X, M, out double x, out double m))
                 {
-                    MessageBox.Show("Заполните поля x и m.", "Ошибка",
-                        MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
+                    MessageBox.Show("Введите корректные значения", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
                 }
 
-                var ci = CultureInfo.InvariantCulture;
-                string xStr = XTextBox.Text.Replace(',', '.');
-                string mStr = MTextBox.Text.Replace(',', '.');
-
-                if (!double.TryParse(xStr, NumberStyles.Float, ci, out double x))
-                {
-                    MessageBox.Show("Некорректное значение x.", "Ошибка ввода",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-
-                if (!double.TryParse(mStr, NumberStyles.Float, ci, out double m))
-                {
-                    MessageBox.Show("Некорректное значение m.", "Ошибка ввода",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-
-                double fx = CalculateFx(x);
-
-                double xb = x * m;
-                double s;
-
-                if (xb > 1 && xb < 10)
-                {
-                    s = Math.Exp(fx);
-                }
-                else if (xb > 12 && xb < 40)
-                {
-                    double underSqrt = Math.Abs(fx) + 4 * m;
-                    if (underSqrt < 0)
-                    {
-                        MessageBox.Show("Подкоренное выражение отрицательно.", "Математическая ошибка",
-                            MessageBoxButton.OK, MessageBoxImage.Error);
-                        return;
-                    }
-
-                    s = Math.Sqrt(underSqrt);
-                }
+                FxType type;
+                if (ShRadio.IsChecked == true)
+                    type = FxType.Sinh;
+                else if (SquareRadio.IsChecked == true)
+                    type = FxType.Square;
+                else if (ExpRadio.IsChecked == true)
+                    type = FxType.Exp;
                 else
                 {
-                    s = m * fx * fx;
+                    MessageBox.Show("Выберите функцию","Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
                 }
 
-                ResultTextBox.Text = s.ToString("G6", ci);
+                double result = SecondPageCalculator.Calculate(x,m, type);
+                     
+                ResultTextBox.Text = result.ToString();
+
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ошибка: " + ex.Message, "Ошибка",
                     MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
             }
-        }
-
-        private double CalculateFx(double x)
-        {
-            if (ShRadio.IsChecked == true)
-            {
-                return Math.Sinh(x);
-            }
-            if (SquareRadio.IsChecked == true)
-            {
-                return x * x;
-            }
-            if (ExpRadio.IsChecked == true)
-            {
-                return Math.Exp(x);
-            }
-
-            throw new InvalidOperationException("Не выбрана функция f(x).");
         }
 
         private void CleanBtn_Click(object sender, RoutedEventArgs e)
         {
             XTextBox.Clear();
-            MTextBox.Clear();
+            BTextBox.Clear();
             ResultTextBox.Clear();
             ShRadio.IsChecked = true; 
         }
