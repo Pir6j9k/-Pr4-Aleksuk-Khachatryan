@@ -26,11 +26,11 @@
 ---
  <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/cdea6c0c-64de-4793-b297-03f1f474213e" />
  <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/3c3079ed-d59d-47f5-8f66-70e6e21b53ab" />
----
+
 Математическая функция SecondPage
 
-<img width="831" height="655" alt="image" src="https://github.com/user-attachments/assets/e8416c48-b189-4a9a-9bcf-15f2609a9447" />
-<img width="831" height="655" alt="image" src="https://github.com/user-attachments/assets/bef4d594-9e6c-4c03-8151-4d8d8a8e2e14" />
-<img width="831" height="655" alt="image" src="https://github.com/user-attachments/assets/3f9b4818-e191-408e-82c3-3661afa550f0" />
+<img width="1102" height="655" alt="image" src="https://github.com/user-attachments/assets/e8416c48-b189-4a9a-9bcf-15f2609a9447" />
+<img width="1102" height="655" alt="image" src="https://github.com/user-attachments/assets/bef4d594-9e6c-4c03-8151-4d8d8a8e2e14" />
+<img width="1102" height="655" alt="image" src="https://github.com/user-attachments/assets/3f9b4818-e191-408e-82c3-3661afa550f0" />
 
 
