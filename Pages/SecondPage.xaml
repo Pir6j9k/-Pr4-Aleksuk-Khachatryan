@@ -27,12 +27,12 @@
 
                 <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="top">
                     <TextBlock Text="x" Margin="10" HorizontalAlignment="Right"/>
-                    <TextBlock Text="m" Margin="10" HorizontalAlignment="Right"/>
+                    <TextBlock Text="b" Margin="10" HorizontalAlignment="Right"/>
                 </StackPanel>
 
                 <StackPanel  Grid.Column="1" VerticalAlignment="Center" >
                     <TextBox x:Name="XTextBox" Margin="10" Width="100" PreviewTextInput="NumberValidationTextBox"/>
-                    <TextBox x:Name="MTextBox" Margin="10" Width="100" PreviewTextInput="NumberValidationTextBox"/>
+                    <TextBox x:Name="BTextBox" Margin="10" Width="100" PreviewTextInput="NumberValidationTextBox"/>
                     <StackPanel Margin="10">
                         <RadioButton x:Name="ShRadio" Content="sh(x)" Margin="0,5,0,5"/>
                         <RadioButton x:Name="SquareRadio" Content="x^2" Margin="0,5,0,5"/>
